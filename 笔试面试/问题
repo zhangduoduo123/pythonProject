@@ -1,0 +1,42 @@
+# 枚举法
+seq = ['one', 'two', 'three']
+for i, element in enumerate(seq):
+...     print i, element
+...
+0 one
+1 two
+2 three
+#字典
+import pdb
+if __name__ == "__main__":
+    #创建字典
+    dic = {"url1":"http://www.qq.com","url2":"http://id.qq.com"}
+    #更新字典
+    dic["url3"] = "http://qzone.qq.com"
+    #遍历字典
+    for key in dic.keys():
+        if key == "url1":
+            #更新字典
+            dic[key] = "http://www.qq.com/wenle"
+
+    #遍历字典
+    for key,value in dic.iteritems():
+        print "key:[%s],value:[%s]"%(key,value)
+
+    #遍历字典
+    for key in dic.iterkeys():
+        print "key:[%s]"%(key)
+
+    #遍历字典
+    for value in dic.itervalues():
+        print "value:[%s]"%(value)
+#矩阵转置
+print([list(_)for _ in zip(*L)])
+#阶乘
+for i in range(1,a + 1):
+        num *= i
+#二维数组定义
+image =[[0 for col in range(5)] for row in range(3)]
+#一行数据 转多行 自定义列数
+new_list_t = [new_list1[i:i + iilen] for i in range(0, len(new_list1), iilen)]
+#
