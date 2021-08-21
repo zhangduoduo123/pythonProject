@@ -39,4 +39,10 @@ for i in range(1,a + 1):
 image =[[0 for col in range(5)] for row in range(3)]
 #一行数据 转多行 自定义列数
 new_list_t = [new_list1[i:i + iilen] for i in range(0, len(new_list1), iilen)]
-#
+#切片
+>>>'ABCDEFG'[::2]
+>>>'ACEG'
+字符串的切片操作
+倒数第一个元素的索引是-1
+>>> L[:10:2]
+[0, 2, 4, 6, 8]
